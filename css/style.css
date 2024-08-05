@@ -1,0 +1,295 @@
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+  padding: 0px;
+  margin-top: -10px;
+  margin-bottom: -30px;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+  text-align: center;
+}
+.star-rating label {
+  color: #bbb;
+  font-size: 50px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+  color: #fac43a;
+}
+
+#container {
+  display: inline;
+  margin: 0 0 0 300px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.emailadd h2 {
+  font-size: 0.8rem;
+}
+
+.emailadd input {
+  height: 25px;
+  margin-top: -5px;
+}
+
+.level-img {
+  width: 250px;
+  margin-bottom: -20px;
+}
+
+.whole {
+  width: 700px;
+  border: 2px solid black;
+  border-radius: 25px;
+  list-style: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headline {
+  margin: 10px 0 0 0;
+}
+
+.headline h1 {
+  font-size: 1.5rem;
+}
+
+.headline h2 {
+  margin: -30px 0 0 0;
+  font-size: 0.8rem;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  background-color: rgb(211, 204, 204);
+  border-radius: 0.25rem;
+  appearance: none;
+  cursor: pointer;
+  margin-bottom: -4px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #fac43a;
+}
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 2.5px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: 3px solid transparent;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg) scale(1);
+}
+
+input[type="checkbox"]:checked:before {
+  border-left: -2px;
+  border-color: white;
+  animation: checkAnim 0.2s ease;
+}
+
+@keyframes checkAnim {
+  from {
+    transform: rotate(45deg) scale(0);
+  }
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.comment-col1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.comment1 {
+  margin-right: 30px;
+}
+
+.comment-col2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.comment2 {
+  margin-right: 30px;
+}
+.comment-col3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.comment3 {
+  margin-right: 30px;
+}
+
+.headline2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.headline2 h2 {
+  margin: 0 0 10px 0;
+  font-size: 0.8rem;
+}
+
+.headline2 .chckbx {
+  font-size: 0.8rem;
+  margin: 0 20px 0 0;
+}
+
+.comments .txtbox {
+  width: 300px;
+}
+
+.comments .btn {
+  color: #252ccc;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.headline3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.headline3 h2 {
+  line-height: 25px;
+  margin: 0 0 10px 0;
+  font-size: 0.8rem;
+}
+
+.headline3 .chckbx {
+  font-size: 0.8rem;
+  margin: 0 20px 0 0;
+}
+
+#btn {
+  margin: 10px 0 15px 0;
+}
+
+#email::placeholder {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .star-rating label {
+    color: #bbb;
+    font-size: 35px;
+    padding: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #container {
+    display: inline;
+    margin: 0 0 0 300px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .whole {
+    width: 350px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    list-style: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comment {
+    margin-top: 10px;
+  }
+  .comment-col1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3px;
+  }
+  .comment1 {
+    margin-right: 10px;
+    margin-bottom: 3px;
+  }
+  .comment-col2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3px;
+  }
+  .comment2 {
+    margin-right: 10px;
+    margin-bottom: 3px;
+  }
+  .comment-col3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3px;
+  }
+  .comment3 {
+    margin-right: 10px;
+    margin-bottom: 3px;
+  }
+  .comment .comment-col1 label {
+    font-size: 11px;
+  }
+  .comment .comment-col2 label {
+    font-size: 11px;
+  }
+  .comment .comment-col3 label {
+    font-size: 11px;
+  }
+  .headline h1 {
+    width: 300px;
+    font-size: 18px;
+    margin-left: 25px;
+  }
+
+  .headline h2 {
+    margin-left: 25px;
+    width: 300px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .headline2 h2 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .headline2 {
+    margin-left: 25px;
+    margin-bottom: 3px;
+  }
+  .emailadd h2 {
+    font-size: 12px;
+  }
+
+  .emailadd input {
+    height: 20px;
+    margin-top: -5px;
+  }
+  #email::placeholder {
+    font-size: 12px;
+    
+  }
+}

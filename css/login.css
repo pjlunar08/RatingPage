@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainpage {
+  margin-top: -250px;
+}
+
+.bg {
+  display: grid;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  margin-top: -50px;
+}
+.center {
+  margin: auto;
+  margin-top: 100px;
+}
+.col1 {
+  z-index: -1;
+}
+.bg2 {
+  width: 800px;
+  margin-top: 200px;
+  border-radius: 30px;
+  opacity: 100%;
+}
+.col {
+  display: grid;
+  align-items: center;
+}
+
+#form {
+  margin-top: -300px;
+  margin-left: 450px;
+  width: 300px;
+
+  z-index: 1;
+  opacity: 100%;
+}
+
+#form1 {
+  background-color: whitesmoke;
+}
+
+#pass {
+  border: 2px solid rgb(5, 5, 5);
+  border-radius: 4px;
+  margin-left: 3px;
+  font-size: 15px;
+}
+
+#user {
+  border: 2px solid rgb(5, 5, 5);
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+#btn {
+  background-color: #002df5;
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+  color: aliceblue;
+  margin-left: 100px;
+}
